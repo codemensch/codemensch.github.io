@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cody Fontes - Web Developer</title>
+    <!-- Mobile view sizing -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link rel='stylesheet' type='text/css' href='css/custom.css'>
+    <link rel='stylesheet' type='text/css' href='css/portfolio_modal.css'>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  
+  </head>
+  <body>
+    <header>
+      <a href='#'>
+        <div class='logo logo-shadow'><strong>C</strong></div>
+        <div class='logo logo-relief'><strong>C</strong></div>
+      </a>
+    </header>
+    
+    <div id='toggle' class='nav-btn-container'>
+      <div class='nav-circle'>
+          <i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+    
+    <nav class='menu'>
+      <div class='nav-btn-container'>
+        <div id='portfolio-btn' class='nav-circle'>
+          <a href="#portfolio">
+            <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div id='briefcase-container'></div>
+      </div>
+      <div class='nav-btn-container'>
+        <div id='education-btn' class='nav-circle'>
+          <a href="#education">
+            <i class="fa fa-book fa-3x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div id='education-container'></div>
+      </div>
+      <div class='nav-btn-container'>
+        <div id='about-btn' class='nav-circle'>
+          <a href="#about">
+            <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div id='user-container'></div>
+      </div>
+      <div class='nav-btn-container'>
+        <div id='contact-btn' class='nav-circle'>
+          <a href="#contact">
+            <i class="fa fa-paper-plane fa-3x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div id='envelope-container'></div>
+      </div>
+    </nav>
+    <div class='container-fluid'>
+      <div class='title-section section'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <h2 class='title'>hi i'm cody fontes - full stack web developer in training.</h2>
+            <h3 class='subtitle' >see my education progress and growing portfolio!</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div id='portfolio' class='portfolio-section section section-spacing'>
+        <h4>projects</h4>
+        <div class='row'>
+          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
+            <div id='social' class='project-container text-center' data-toggle="modal" data-target="#modal-fullscreen">
+              <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+            </div>
+            <h5>Social</h5>
+          </div>
+          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
+            <div id='steadicam' class='project-container text-center' data-toggle="modal" data-target="#modal-fullscreen">
+              <i class="fa fa-video-camera fa-4x" aria-hidden="true"></i>
+            </div>
+            <h5>Steadicam</h5>
+          </div>
+          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
+            <div class='overlay-container'>  
+              <div class='project-container text-center'>
+                <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
+              </div>
+              <div class='overlay'>
+                <h4 class='overlay-text'>Coming Soon!</h4>
+              </div>
+            </div>
+            <h5>Philanthropic</h5>
+          </div>
+          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
+            <div class='overlay-container'>
+              <div class='project-container text-center'>
+                <i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i>
+              </div>
+              <div class='overlay'>
+                <h4 class='overlay-text'>Coming Soon!</h4>
+              </div>
+            </div>
+            <h5>Commerce</h5>
+          </div>
+          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
+            <div class='overlay-container'>
+              <div class='project-container text-center'>
+                <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+              </div>
+              <div class='overlay'>
+                <h4 class='overlay-text'>Coming Soon!</h4>
+              </div>
+            </div>
+            <h5>Scripts</h5>
+          </div>
+          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
+            <div class='overlay-container'>
+              <div class='project-container text-center'>
+                <i class="fa fa-question-circle fa-4x" aria-hidden="true"></i>
+              </div>
+              <div class='overlay'>
+                <h4 class='overlay-text'>Coming Soon!</h4>
+              </div>
+            </div>
+            <h5>Next</h5>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal fullscreen -->
+      <!-- Modal Credit http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-transparent-and-fullscreen-modals -->
+      <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="socialLabel">Social Media</h4>
+              <p class='socialInfo'>mock social media site</p>
+              <p class='socialInfo'>login-logout / account creation / credit card processing (stripe)</p>
+              <p class='socialInfo'>ruby / rails / bootstrap / css / html</p>
+              <p class="socialInfo"><a href='https://cryptic-citadel-19897.herokuapp.com'>LIVE DEMO</a></p>
+              <h4 class="modal-title" id="steadicamLabel">Steadicam</h4>
+              <p class='steadicamInfo'>quick build for an LA based steadicam operator</p>
+              <p class='steadicamInfo'>responsive navigation / active links / video and pdf embeds </p>
+              <p class='steadicamInfo'>ruby / rails / bootstrap / css / html</p>
+            </div>
+            <div class="modal-body">
+              <div id="social-modal">
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                    <img src='img/social_home.png' alt='DevMatch Front Page' class='img-responsive'>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                    <img src='img/social_signup.png' alt='DevMatch Sign Up Page' class='img-responsive'>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                    <img src='img/social_profile.png' alt='DevMatch Profile Page' class='img-responsive'>
+                  </div>
+                </div>
+              </div>
+              <div id="steadicam-modal">
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                      <img src='img/steadicam_home.png' alt='Steadicam Front Page' class='img-responsive'>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                    <img src='img/steadicam_resume.png' alt='Steadicam Resume Page' class='img-responsive'>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                    <img src='img/steadicam_contact.png' alt='Steadicam Contact Page' class='img-responsive'>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default close-btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Education -->
+      <div id='education' class='education-section section section-spacing'>
+        <h4>education</h4>
+        <div class='row'>
+          <!-- School #1 -->
+          <div class='col-xs-12 col-sm-6 col-md-4'>
+            <div class='panel panel-default'>
+              <div class="panel-body">
+                <div class='row vertical-center'>
+                  <div class='col-xs-3 col-xs-offset-1 school-logo'>
+                    <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+                  </div>
+                  <div class='col-xs-8'>
+                    <a href='http://www.codermanual.com'><h3 class='no-padding-margin'>Coder<br> Manual</h3></a>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-12'>
+                    <p class='text-center'>Video-based full-stack web development course. Includes Harvard CS50 and Dartmouth Khan Academy courses.</p>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-12'>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                        75%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- School #2 -->
+          <div class='col-xs-12 col-sm-6 col-md-4'>
+            <div class='panel panel-default'>
+              <div class="panel-body">
+                <div class='row vertical-center'>
+                  <div class='col-xs-3 col-xs-offset-1 school-logo'>
+                    <i class="fa fa-shield fa-3x" aria-hidden="true"></i>
+                  </div>
+                  <div class='col-xs-8'>
+                    <a href='http://www.lb.devry.edu/'><h3 class='no-padding-margin'>DeVry<br> University</h3></a>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-12 text-center'>
+                    <p class='text-center'>Accelerated 4 year computer science degree specializing in the medical and biological research fields.</p>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-12'>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        100%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <!-- School #3 -->
+          <div class='col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0'>
+            <div class='panel panel-default'>
+              <div class="panel-body">
+                <div class='row vertical-center'>
+                  <div class='col-xs-3 col-xs-offset-1 school-logo'>
+                    <i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i>
+                  </div>
+                  <div class='col-xs-8'>
+                    <a href='https://www.freecodecamp.org/'><h3 class='no-padding-margin'>Free Code Camp</h3></a>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-12 text-center'>
+                    <p class='text-center'>Open source bootcamp partnering with non-profits providing students real-world web development projects.</p>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-12'>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                        20%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id='about' class='about-section section section-spacing'>
+        <h4>about</h4>
+        <div class='row'>
+          <div class='col-xs-12 col-sm-6 bio'>
+            <p>
+              I'm a tinkerer, I want to know how things work. I also like solving problems. Development
+              gives me the opportunity to be a mad scientist whenever and wherever.
+            </p>
+            <p>
+              With a CS degree in tow, I'm currently two nerdy knees deep in coding bootcamps. Already
+              proficient in Twitter Bootstrap, CSS, HTML and JQuery, my goal is to be a functioning Ruby, 
+              Rails and Javascript developer by the end of 2017. 
+            </p>
+          </div>
+          <div class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0'>
+            <div class='center-block about-img'>
+              <img src='img/cody_headshot_square.png' alt='Headshot of Cody Fontes' class='img-responsive'>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div id='contact' class='contact-section section section-spacing'>
+        <div class='row'>
+          <div class='col-xs-12 contact text-center'>
+            <img src='img/Cody-Logomark_Final.png' height='200px' alt='Cody Fontes footer stamp'>
+            <h3>let's connect.</h3>
+            <div class='contact-icons'>
+              <div class='icon-circle'>
+                <a href="mailto:codemensch@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+              </div>
+              <div class='icon-circle'>
+                <a href="https://www.linkedin.com/in/cody-fontes-b800219/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+              </div>
+              <div class='icon-circle'>
+                <a href="https://github.com/codemensch"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Apps -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
