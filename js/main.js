@@ -56,7 +56,7 @@ $(document).ready(function(){
   var currentLabel = "";
   var currentInfo = "";
   
-  $('#social, #steadicam, .close, .close-btn').click(function(){
+  $('#social, #steadicam, #weather, .close, .close-btn').click(function(){
     if ($(this).attr('id') == 'social'){
       currentProject = $('#social-modal').attr('id');
       currentLabel = $('#socialLabel').attr('id');
@@ -66,6 +66,11 @@ $(document).ready(function(){
       currentProject = $('#steadicam-modal').attr('id');
       currentLabel = $('#steadicamLabel').attr('id');
       currentInfo = $('.steadicamInfo').attr('class');
+    }
+    else if ($(this).attr('id') == 'weather'){
+      currentProject = $('#weather-modal').attr('id');
+      currentLabel = $('#weatherLabel').attr('id');
+      currentInfo = $('.weatherInfo').attr('class');
     }
     
     $('#' + currentLabel).toggle();

@@ -108,15 +108,10 @@
             <h5>Steadicam</h5>
           </div>
           <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
-            <div class='overlay-container'>  
-              <div class='project-container text-center'>
-                <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
-              </div>
-              <div class='overlay'>
-                <h4 class='overlay-text'>Coming Soon!</h4>
-              </div>
+            <div id='weather' class='project-container text-center' data-toggle="modal" data-target="#modal-fullscreen">
+              <i class="fa fa-cloud fa-5x" aria-hidden="true"></i>
             </div>
-            <h5>Philanthropic</h5>
+            <h5>Local Weather</h5>
           </div>
           <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
             <div class='overlay-container'>
@@ -161,16 +156,22 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="socialLabel">Social Media</h4>
-              <p class='socialInfo'>mock social media site</p>
-              <p class='socialInfo'>login-logout / account creation / credit card processing (stripe)</p>
-              <p class='socialInfo'>ruby / rails / bootstrap / css / html</p>
-              <p class="socialInfo"><a href='https://cryptic-citadel-19897.herokuapp.com'>LIVE DEMO</a></p>
-              <h4 class="modal-title" id="steadicamLabel">Steadicam</h4>
-              <p class='steadicamInfo'>quick build for an LA based steadicam operator</p>
-              <p class='steadicamInfo'>responsive navigation / active links / video and pdf embeds </p>
-              <p class='steadicamInfo'>ruby / rails / bootstrap / css / html</p>
-              <p class="steadicamInfo"><a href='https://lit-journey-28464.herokuapp.com'>LIVE DEMO</a></p>
+                <h4 class="modal-title" id="socialLabel">Social Media</h4>
+                <p class='socialInfo'>mock social media site</p>
+                <p class='socialInfo'>login-logout / account creation / credit card processing (stripe)</p>
+                <p class='socialInfo'>ruby / rails / bootstrap / css / html</p>
+                <p class="socialInfo"><a href='https://cryptic-citadel-19897.herokuapp.com'>LIVE DEMO</a></p>
+                <h4 class="modal-title" id="steadicamLabel">Steadicam</h4>
+                <p class='steadicamInfo'>quick build for an LA based steadicam operator</p>
+                <p class='steadicamInfo'>responsive navigation / active links / video and pdf embeds </p>
+                <p class='steadicamInfo'>ruby / rails / bootstrap / css / html</p>
+                <p class="steadicamInfo"><a href='https://lit-journey-28464.herokuapp.com'>LIVE DEMO</a></p>
+                <h4 class="modal-title" id="weatherLabel">Local Weather</h4>
+                <p class='weatherInfo'>displays local weather based on geolocation.</p>
+                <p class='weatherInfo'>calculates sunrise/sunset based on timezone (Google Time Zone API)</p>
+                <p class='weatherInfo'>JSON / JavaScript / JQuery / css / html</p>
+                <p class="weatherInfo"><a href='https://codemensch.github.io/local_weather/'>LIVE DEMO</a></p>
+                
             </div>
             <div class="modal-body">
               <div id="social-modal">
@@ -204,6 +205,23 @@
                 <div class='row'>
                   <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
                     <img src='img/steadicam_contact.png' alt='Steadicam Contact Page' class='img-responsive'>
+                  </div>
+                </div>
+              </div>
+              <div id="weather-modal">
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                      <img src='img/weather_day.png' alt='Weather app Farenheit' class='img-responsive'>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
+                    <img src='img/weather_night.png' alt='Weather app Celsius' class='img-responsive'>
+                  </div>
+                </div>
+                <div class='row text-center'>
+                  <div class='col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-4'>
+                    <img src='img/weather_mobile.png' alt='Weather app mobile' class='img-responsive'>
                   </div>
                 </div>
               </div>
@@ -319,8 +337,8 @@
             </p>
             <p>
               With a CS degree in tow, I'm currently two nerdy knees deep in coding bootcamps. Already
-              proficient in Twitter Bootstrap, CSS, HTML and JQuery, my goal is to be a functioning Ruby, 
-              Rails and Javascript developer by the end of 2017. 
+              proficient in Twitter Bootstrap, CSS, HTML and JQuery, my goal is to be a fluent web developer
+              ASAP.
             </p>
           </div>
           <div class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0'>
