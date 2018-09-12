@@ -13,7 +13,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -96,16 +96,16 @@
         <h4>projects</h4>
         <div class='row'>
           <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
+            <div id='space' class='project-container text-center' data-toggle="modal" data-target="#modal-fullscreen">
+              <i class="fas fa-user-astronaut fa-5x"></i>
+            </div>
+            <h5>Space Vinyl</h5>
+          </div>
+          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
             <div id='social' class='project-container text-center' data-toggle="modal" data-target="#modal-fullscreen">
               <i class="fa fa-users fa-5x" aria-hidden="true"></i>
             </div>
             <h5>Social</h5>
-          </div>
-          <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
-            <div id='steadicam' class='project-container text-center' data-toggle="modal" data-target="#modal-fullscreen">
-              <i class="fa fa-video-camera fa-4x" aria-hidden="true"></i>
-            </div>
-            <h5>Steadicam</h5>
           </div>
           <div class='col-xs-6 col-sm-6 col-md-4 portfolio-box'>
             <div id='weather' class='project-container text-center' data-toggle="modal" data-target="#modal-fullscreen">
@@ -156,22 +156,21 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="socialLabel">Social Media</h4>
-                <p class='socialInfo'>mock social media site</p>
-                <p class='socialInfo'>login-logout / account creation / credit card processing (stripe)</p>
-                <p class='socialInfo'>ruby / rails / bootstrap / css / html</p>
-                <p class="socialInfo"><a href='https://cryptic-citadel-19897.herokuapp.com'>LIVE DEMO</a></p>
-                <h4 class="modal-title" id="steadicamLabel">Steadicam</h4>
-                <p class='steadicamInfo'>quick build for an LA based steadicam operator</p>
-                <p class='steadicamInfo'>responsive navigation / active links / video and pdf embeds </p>
-                <p class='steadicamInfo'>ruby / rails / bootstrap / css / html</p>
-                <p class="steadicamInfo"><a href='https://lit-journey-28464.herokuapp.com'>LIVE DEMO</a></p>
-                <h4 class="modal-title" id="weatherLabel">Local Weather</h4>
-                <p class='weatherInfo'>displays local weather based on geolocation.</p>
-                <p class='weatherInfo'>calculates sunrise/sunset based on timezone (Google Time Zone API)</p>
-                <p class='weatherInfo'>JSON / JavaScript / JQuery / css / html</p>
-                <p class="weatherInfo"><a href='https://codemensch.github.io/local_weather/'>LIVE DEMO</a></p>
-                
+              <h4 class="modal-title" id="socialLabel">Social Media</h4>
+              <p class='socialInfo'>mock social media site</p>
+              <p class='socialInfo'>login-logout / account creation / credit card processing (stripe)</p>
+              <p class='socialInfo'>ruby / rails / bootstrap / css / html</p>
+              <p class="socialInfo"><a href='https://cryptic-citadel-19897.herokuapp.com'>LIVE DEMO</a></p>
+              <h4 class="modal-title" id="spaceLabel">space</h4>
+              <p class='spaceInfo'>a virtual turntable that plays space sounds</p>
+              <p class='spaceInfo'>functionality of a regular turntable, choose an album, load the vinyl, place the needle</p>
+              <p class='spaceInfo'>javascript / jquery / css / html</p>
+              <p class="spaceInfo"><a href='https://codemensch.github.io/space_vinyl/'>LIVE DEMO</a></p>
+              <h4 class="modal-title" id="weatherLabel">Local Weather</h4>
+              <p class='weatherInfo'>displays local weather based on geolocation.</p>
+              <p class='weatherInfo'>calculates sunrise/sunset based on timezone (Google Time Zone API)</p>
+              <p class='weatherInfo'>JSON / JavaScript / JQuery / css / html</p>
+              <p class="weatherInfo"><a href='https://codemensch.github.io/local_weather/'>LIVE DEMO</a></p>
             </div>
             <div class="modal-body">
               <div id="social-modal">
@@ -191,20 +190,20 @@
                   </div>
                 </div>
               </div>
-              <div id="steadicam-modal">
+              <div id="space-modal">
                 <div class='row'>
                   <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
-                      <img src='img/steadicam_home.png' alt='Steadicam Front Page' class='img-responsive'>
+                      <img src='img/space_vinyl_home.png' alt='Space Vinyl Front Page' class='img-responsive'>
                   </div>
                 </div>
                 <div class='row'>
                   <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
-                    <img src='img/steadicam_resume.png' alt='Steadicam Resume Page' class='img-responsive'>
+                    <img src='img/space_vinyl_playing.png' alt='Space Vinyl app playing' class='img-responsive'>
                   </div>
                 </div>
                 <div class='row'>
-                  <div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
-                    <img src='img/steadicam_contact.png' alt='Steadicam Contact Page' class='img-responsive'>
+                  <div class='col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-4'>
+                    <img src='img/space_vinyl_mobile.png' alt='Space Vinyl Mobile Orientation' class='img-responsive'>
                   </div>
                 </div>
               </div>

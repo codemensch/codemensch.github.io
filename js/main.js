@@ -56,16 +56,16 @@ $(document).ready(function(){
   var currentLabel = "";
   var currentInfo = "";
   
-  $('#social, #steadicam, #weather, .close, .close-btn').click(function(){
+  $('#social, #space, #weather, .close, .close-btn').click(function(){
     if ($(this).attr('id') == 'social'){
       currentProject = $('#social-modal').attr('id');
       currentLabel = $('#socialLabel').attr('id');
       currentInfo = $('.socialInfo').attr('class');
     }
-    else if ($(this).attr('id') == 'steadicam') {
-      currentProject = $('#steadicam-modal').attr('id');
-      currentLabel = $('#steadicamLabel').attr('id');
-      currentInfo = $('.steadicamInfo').attr('class');
+    else if ($(this).attr('id') == 'space') {
+      currentProject = $('#space-modal').attr('id');
+      currentLabel = $('#spaceLabel').attr('id');
+      currentInfo = $('.spaceInfo').attr('class');
     }
     else if ($(this).attr('id') == 'weather'){
       currentProject = $('#weather-modal').attr('id');

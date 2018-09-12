@@ -45,13 +45,13 @@ html, body {
   }
 }
 
-#social-modal, #steadicam-modal, #weather-modal, #socialLabel, #steadicamLabel, 
-#weatherLabel, .socialInfo, .steadicamInfo, .weatherInfo {
+#social-modal, #space-modal, #weather-modal, #socialLabel, #spaceLabel, 
+#weatherLabel, .socialInfo, .spaceInfo, .weatherInfo {
     display: none;
 }
 
 /*Modal Spacing*/
-#social-modal>.row, #steadicam-modal>.row, #weather-modal>.row {
+#social-modal>.row, #space-modal>.row, #weather-modal>.row {
     margin-top: 50px;
 }
 
