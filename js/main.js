@@ -56,7 +56,7 @@ $(document).ready(function(){
   var currentLabel = "";
   var currentInfo = "";
   
-  $('#social, #space, #weather, .close, .close-btn').click(function(){
+  $('#social, #space, #weather, #vmware, .close, .close-btn').click(function(){
     if ($(this).attr('id') == 'social'){
       currentProject = $('#social-modal').attr('id');
       currentLabel = $('#socialLabel').attr('id');
@@ -71,6 +71,11 @@ $(document).ready(function(){
       currentProject = $('#weather-modal').attr('id');
       currentLabel = $('#weatherLabel').attr('id');
       currentInfo = $('.weatherInfo').attr('class');
+    }
+    else if ($(this).attr('id') == 'vmware'){
+      currentProject = $('#vmware-modal').attr('id');
+      currentLabel = $('#vmwareLabel').attr('id');
+      currentInfo = $('.vmwareInfo').attr('class');
     }
     
     $('#' + currentLabel).toggle();

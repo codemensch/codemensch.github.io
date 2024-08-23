@@ -45,8 +45,8 @@ html, body {
   }
 }
 
-#social-modal, #space-modal, #weather-modal, #socialLabel, #spaceLabel, 
-#weatherLabel, .socialInfo, .spaceInfo, .weatherInfo {
+#social-modal, #space-modal, #weather-modal, #vmware-modal, #socialLabel, #spaceLabel, 
+#weatherLabel, #vmwareLabel, .socialInfo, .spaceInfo, .weatherInfo, .vmwareInfo {
     display: none;
 }
 
