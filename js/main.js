@@ -102,34 +102,62 @@ $(document).ready(function(){
     } // End if
   });
   
-  //Highlight Current Nav Button on Scroll
-  var sections = $('.section')
-    , nav = $('.menu')
-    , nav_height = nav.outerHeight();
-   
-  $(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
-   
-    sections.each(function() {
-      var top = $(this).offset().top - nav_height,
-          bottom = top + $(this).outerHeight();
-   
-      if (cur_pos >= top && cur_pos <= bottom) {
-        nav.find('.nav-circle').removeClass('active');
-        nav.find('.nav-circle[id="'+$(this).attr('id')+'-btn"]').addClass('active');
+  //Active Nav Button
+  let scrollTop = $(window).scrollTop();
+
+  function removeAllActiveClasses() {
+    const sections = $('.section');
+
+    sections.each(function (index, value) {
+      const navBtn = `#${this.id}-btn`;
+      if ($(navBtn).hasClass("active")) {
+        $(navBtn).removeClass("active");
       }
-      
-      var heightCheck = $(window).scrollTop() + $(window).height();
-      var pageHeight = $(document).height();
-      if(heightCheck === pageHeight) {
-        nav.find('.nav-circle').removeClass('active');
-        $('#contact-btn').addClass('active');
-      }
-      
-      if (cur_pos <= nav_height * .5) {
-        nav.find('.nav-circle').removeClass('active');
+    });
+  }
+
+  $(window).on('scroll resize', function () {
+    scrollTop = $(window).scrollTop();
+
+    if (scrollTop === 0) {
+      removeAllActiveClasses();
+    }
+
+    var vpHeight = window.innerHeight;
+
+    $('.section').each(function (index, value) {
+      var elementTop = this.getBoundingClientRect().top;
+      var navBtn = `${this.id}-btn`;
+
+      switch (this.id) {
+        case 'portfolio':
+          if (scrollTop > 0 && elementTop <= vpHeight / 2) {
+            removeAllActiveClasses();
+            $(`#${navBtn}`).addClass("active");
+          }
+          break;
+        case 'education':
+          if (elementTop <= vpHeight / 2) {
+            removeAllActiveClasses();
+            $(`#${navBtn}`).addClass("active");
+          }
+          break;
+        case 'about':
+          if (elementTop <= vpHeight / 2) {
+            removeAllActiveClasses();
+            $(`#${navBtn}`).addClass("active");
+          }
+          break;
+        case 'contact':
+          const scrolledTo = window.scrollY + window.innerHeight;
+          const isReachBottom = document.body.scrollHeight === scrolledTo;
+    
+          if (isReachBottom) {
+            removeAllActiveClasses();
+            $('#contact-btn').addClass("nav-circle active");
+          }
+          break;
       }
     });
   });
-
 });
